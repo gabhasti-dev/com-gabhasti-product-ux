@@ -18,37 +18,39 @@ public class SecurityConfig extends WebSecurityConfigurerAdapter {
 
 	@Autowired
 	private DataSource dataSource;
-	
+
+	/** 
+	 * this method will configure database for user authentication in conjuction with spring security.
+	 * @see org.springframework.security.config.annotation.web.configuration.WebSecurityConfigurerAdapter#configure(org.springframework.security.config.annotation.authentication.builders.AuthenticationManagerBuilder)
+	 */
 	@Override
 	protected void configure(AuthenticationManagerBuilder auth) throws Exception {
-		auth.inMemoryAuthentication()
-			.withUser("maker").password(passwordEncoder().encode("Welcome@01")).roles("MAKER")
-			.and()
-			.withUser("checker").password(passwordEncoder().encode("Welcome@01")).roles("CHECKER");
-	
+
+		auth.jdbcAuthentication().dataSource(dataSource);
+		/*
+		 * auth.inMemoryAuthentication()
+		 * .withUser("maker").password(passwordEncoder().encode("Welcome@01")).roles(
+		 * "MAKER") .and()
+		 * .withUser("checker").password(passwordEncoder().encode("Welcome@01")).roles(
+		 * "CHECKER");
+		 */
 	}
-	
+
 	@Override
 	protected void configure(HttpSecurity http) throws Exception {
-		
-		http.authorizeRequests()
-			.antMatchers("/static/**").permitAll()
-			.antMatchers("/templates/**").permitAll()
-			.antMatchers("/app/dashboard").hasAnyRole("MAKER","CHECKER")
-			.anyRequest().authenticated().and().formLogin();
-			;
-		
-		
+
+		http.authorizeRequests().antMatchers("/static/**").permitAll().antMatchers("/templates/**").permitAll()
+				.antMatchers("/app/dashboard").hasAnyRole("MAKER", "CHECKER").anyRequest().authenticated().and()
+				.formLogin();
+		;
+
 	}
-	
-	
+
 	@Bean
 	public PasswordEncoder passwordEncoder() {
-		
+
 		return new BCryptPasswordEncoder();
-		
+
 	}
-	
-	
-	
+
 }
