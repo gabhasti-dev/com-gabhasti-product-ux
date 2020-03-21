@@ -2,6 +2,8 @@ package com.gabhasti.product.security;
 
 import javax.sql.DataSource;
 
+import org.apache.logging.log4j.LogManager;
+import org.apache.logging.log4j.Logger;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.context.annotation.Bean;
 import org.springframework.context.annotation.Configuration;
@@ -12,10 +14,14 @@ import org.springframework.security.config.annotation.web.configuration.WebSecur
 import org.springframework.security.crypto.bcrypt.BCryptPasswordEncoder;
 import org.springframework.security.crypto.password.PasswordEncoder;
 
+import com.gabhasti.product.config.Application;
+
 @Configuration
 @EnableWebSecurity
 public class SecurityConfig extends WebSecurityConfigurerAdapter {
 
+	private static final Logger log = LogManager.getLogger(SecurityConfig.class.getName());
+	
 	@Autowired
 	private DataSource dataSource;
 
@@ -26,7 +32,10 @@ public class SecurityConfig extends WebSecurityConfigurerAdapter {
 	@Override
 	protected void configure(AuthenticationManagerBuilder auth) throws Exception {
 
+		log.info("Security DB loading");
 		auth.jdbcAuthentication().dataSource(dataSource);
+		log.info("Security DB loaded");
+		
 		/*
 		 * auth.inMemoryAuthentication()
 		 * .withUser("maker").password(passwordEncoder().encode("Welcome@01")).roles(

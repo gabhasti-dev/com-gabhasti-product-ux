@@ -17,9 +17,14 @@ spec:
         image: gabhastiharishscf/com-gabhasti-product-ux:1.0.0
         imagePullPolicy: Always
         ports:
-        - containerPort: 80           
+        - containerPort: 8081           
+        env:
+          - name: JAVA_OPTS
+            value: -Xmx64m -Xms64m     
+      
       imagePullSecrets:
       - name: gabhastiharishscf
+               
 ---
 apiVersion: v1
 kind: Service
@@ -31,5 +36,6 @@ spec:
     app: com-gabhasti-product-ux
   ports:
     - protocol: TCP
-      port: 80
+      port: 80 # the port on which your application will be accessed viz a service  
+      targetPort: 8081 # the port number of your application listens to
       name: http
