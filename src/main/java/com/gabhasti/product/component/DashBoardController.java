@@ -22,19 +22,20 @@ public class DashBoardController {
 		ModelAndView model = new ModelAndView();
 		model.setViewName("dashboard");
 		model.addObject(principal);
+		
 		//return "dashboard";
 		log.debug("Exiting Dashboard"+principal);
 		return model;
 	}
-	@PostMapping("/login")
-	public ModelAndView login(Principal principal) {
+/*	@PostMapping("/login")
+	public ModelAndView login(@) {
 		ModelAndView model = new ModelAndView();
 		model.setViewName("welcome");
 		model.addObject(principal);
 		return model;
 		
 	}
-	
+	*/
 	
 	
 	

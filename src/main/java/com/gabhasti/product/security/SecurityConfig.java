@@ -50,8 +50,10 @@ public class SecurityConfig extends WebSecurityConfigurerAdapter {
 
 		http.authorizeRequests().antMatchers("/static/**").permitAll().antMatchers("/templates/**").permitAll()
 				.antMatchers("/app/dashboard").hasAnyRole("MAKER", "CHECKER").anyRequest().authenticated().and()
-				.formLogin();
-		;
+				.formLogin()
+				
+				;
+		
 
 	}
 
