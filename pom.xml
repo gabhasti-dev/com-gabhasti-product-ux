@@ -5,7 +5,7 @@
 	<groupId>com-gabhasti-product</groupId>
 	<artifactId>com-gabhasti-product-ux</artifactId>
 	<version>1.0.0</version>
-
+    <packaging>war</packaging>
 	<name>com-gabhasti-product-ux</name>
 	<!-- Inherit defaults from Spring Boot -->
 	<parent>
