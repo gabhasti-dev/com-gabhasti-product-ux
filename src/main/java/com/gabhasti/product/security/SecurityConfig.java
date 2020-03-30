@@ -21,12 +21,14 @@ import com.gabhasti.product.config.Application;
 public class SecurityConfig extends WebSecurityConfigurerAdapter {
 
 	private static final Logger log = LogManager.getLogger(SecurityConfig.class.getName());
-	
+
 	@Autowired
 	private DataSource dataSource;
 
-	/** 
-	 * this method will configure database for user authentication in conjuction with spring security.
+	/**
+	 * this method will configure database for user authentication in conjuction
+	 * with spring security.
+	 * 
 	 * @see org.springframework.security.config.annotation.web.configuration.WebSecurityConfigurerAdapter#configure(org.springframework.security.config.annotation.authentication.builders.AuthenticationManagerBuilder)
 	 */
 	@Override
@@ -35,7 +37,7 @@ public class SecurityConfig extends WebSecurityConfigurerAdapter {
 		log.info("Security DB loading");
 		auth.jdbcAuthentication().dataSource(dataSource);
 		log.info("Security DB loaded");
-		
+
 		/*
 		 * auth.inMemoryAuthentication()
 		 * .withUser("maker").password(passwordEncoder().encode("Welcome@01")).roles(
@@ -51,9 +53,8 @@ public class SecurityConfig extends WebSecurityConfigurerAdapter {
 		http.authorizeRequests().antMatchers("/static/**").permitAll().antMatchers("/templates/**").permitAll()
 				.antMatchers("/app/dashboard").hasAnyRole("MAKER", "CHECKER").anyRequest().authenticated().and()
 				.formLogin()
-				
-				;
-		
+
+		;
 
 	}
 
