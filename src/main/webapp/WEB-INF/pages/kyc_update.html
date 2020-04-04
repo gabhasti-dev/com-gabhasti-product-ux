@@ -1,0 +1,698 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+  <meta charset="utf-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <title>AdminLTE 3 | Registration Page</title>
+  <!-- Tell the browser to be responsive to screen width -->
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <!--Multi form-->
+  <link rel="stylesheet" href="../dist/css/gb.style.css">
+  <!-- Font Awesome -->
+  <link rel="stylesheet" href="../plugins/fontawesome-free/css/all.min.css">
+  <!-- Ionicons -->
+  <link rel="stylesheet" href="https://code.ionicframework.com/ionicons/2.0.1/css/ionicons.min.css">
+  <!-- icheck bootstrap -->
+  <link rel='stylesheet' href='https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/4.1.3/css/bootstrap.min.css'>
+  <!-- Theme style -->
+  <link rel="stylesheet" href="../dist/css/adminlte.min.css">
+  <!-- Google Font: Source Sans Pro -->
+  <link href="https://fonts.googleapis.com/css?family=Source+Sans+Pro:300,400,400i,700" rel="stylesheet">
+  <link rel="stylesheet" href="../dist/css/custom_brand.css">
+</head>
+
+<body class="hold-transition layout-top-nav" style="background-color: #EBF1DE;">
+
+  <div class="wrapper">
+
+    <!-- Navbar -->
+    <nav class="main-header navbar navbar-expand-md navbar-light brand_green_bg">
+      <div class="container-fluid">
+        <a href="../index3.html" class="navbar-brand">
+          <img src="../dist/img/AdminLTELogo.png" alt="AdminLTE Logo" class="brand-image img-circle elevation-3"
+            style="opacity: .8">
+          <span class="brand-text font-weight-light brand_white_txt"><b>Customer Engagement Portal</b></span>
+        </a>
+
+        <button class="navbar-toggler order-1" type="button" data-toggle="collapse" data-target="#navbarCollapse"
+          aria-controls="navbarCollapse" aria-expanded="false" aria-label="Toggle navigation">
+          <span class="navbar-toggler-icon"></span>
+        </button>
+
+        <div class="collapse navbar-collapse order-3" id="navbarCollapse">
+          <!-- Left navbar links -->
+          <ul class="navbar-nav">
+            <li class="nav-item">
+              <a href="invoice_summary.html" class="nav-link"><b><i class="fas fa-home brand_white_txt"></i></b></a>
+            </li>
+            <li class="nav-item">
+              <a href="#" class="nav-link font-white "><b class="brand_white_txt">Product & Services</b></a>
+            </li>
+            <li class="nav-item">
+              <a href="#" class="nav-link font-white "><b class="brand_white_txt">Contact Us</b></a>
+            </li>
+          </ul>
+        </div>
+    </nav>
+    <!-- /.navbar -->
+
+    <!--PEN HEADER-->
+    <header class="header">
+      <h1 class="header__title brand_golden_txt">Complete KYC Details</h1>
+      <!-- <div class="header__btns btns"><a class="header__btn btn" href="https://github.com/nat-davydova/multisteps-form" title="Check on Github" target="_blank">Check on Github</a></div> -->
+    </header>
+    <!--PEN CONTENT     -->
+    <div class="content">
+      <!--content inner-->
+      <!-- <div class="content__inner"> -->
+      <div class="container">
+        <h2 class="content__title">Click on 'Prev' and 'Next' to fill the complete KYC Details</h2>
+      </div>
+      <div class="container-custom overflow-hidden ">
+        <!--multisteps-form-->
+        <div class="multisteps-form">
+          <!--progress bar-->
+          <div class="row">
+            <div class="col-12 col-lg-8 ml-auto mr-auto mb-4">
+              <div class="multisteps-form__progress">
+                <button class="multisteps-form__progress-btn js-active" type="button"
+                  title="Basic & GST Information">Corporate Information</button>
+                <button class="multisteps-form__progress-btn" type="button" title="Detail Information">Director &
+                  Document
+                  Information</button>
+                <button class="multisteps-form__progress-btn" type="button" title="Director Details and Documents">Final
+                  Confirmation</button>
+
+              </div>
+            </div>
+          </div>
+          <!--form panels-->
+          <div class="row">
+            <div class="col-12 col-lg-12 m-auto">
+              <form class="multisteps-form__form">
+                <!--single form panel-->
+                <div class="multisteps-form__panel shadow p-4 rounded bg-white js-active" data-animation="scaleIn" >
+                  <h3 class="multisteps-form__title">Corporate Information</h3>
+                  <div class="multisteps-form__content">
+                    <div class="form-row mt-2" >
+                      <div class="col-4 col-sm-4">
+                        <input class="multisteps-form__input form-control" type="text" placeholder="Oportunity ID"
+                          disabled />
+                      </div>
+                      <div class="col-4 col-sm-4 mt-4 mt-sm-0">
+                        <input class="multisteps-form__input form-control" type="text"
+                          placeholder="Gabhasti-Customer ID" disabled />
+                      </div>
+                      <div class="col-4 col-sm-4 mt-4 mt-sm-0">
+                        <select class="multisteps-form__select form-control">
+                          <option selected="selected">Type of Company</option>
+                          <option>Private Limited </option>
+                          <option>LLP</option>
+                          <option>Partnership</option>
+                          <option>Single Proprietor </option>
+                        </select>
+                      </div>
+                    </div>
+                    <div class="form-row mt-2">
+                      <div class="col-4 col-sm-4">
+
+                        <select class="multisteps-form__select form-control">
+                          <option selected="selected">Industry...</option>
+                          <option>...</option>
+                        </select>
+                      </div>
+                      <div class="col-4 col-sm-4 mt-4 mt-sm-0">
+
+                        <select class="multisteps-form__select form-control">
+                          <option selected="selected">Sector...</option>
+                          <option>...</option>
+                        </select>
+                      </div>
+                      <div class="col-4 col-sm-4">
+
+                        <select class="multisteps-form__select form-control">
+                          <option selected="selected">Sub-Sector...</option>
+                          <option>...</option>
+                        </select>
+                      </div>
+                    </div>
+                    <div class="form-row mt-2">
+                      <div class="col-4 col-sm-4">
+                        <input class="multisteps-form__input form-control" type="text"
+                          placeholder="Name of the Company" />
+                      </div>
+                      <div class="col-4 col-sm-4 mt-4 mt-sm-0">
+                        <input class="multisteps-form__input form-control" type="text" placeholder="PAN" />
+                      </div>
+                      <div class="col-3 col-sm-3">
+                        <input class="multisteps-form__input form-control" type="text" placeholder="CIN" />
+                      </div>
+                      <div class="col-1 col-sm-1">
+                        <button class="btn btn-warning btn-dir" type="button" title="Autofill">Autofill</button>
+                      </div>
+                    </div>
+                    <div class="form-row mt-2">
+                      <div class="col-2 col-sm-2">
+                        <input class="multisteps-form__input form-control" type="text" placeholder="GST#" />
+                      </div>
+                      <div class="col-2 col-sm-2">
+                        <button class="btn btn-warning btn-dir" type="button" title="Activate GST KYC">Activate GST
+                          KYC</button>
+                      </div>
+                      <div class="col-4 col-sm-4 mt-4 mt-sm-0">
+                        <input class="multisteps-form__input form-control" type="text"
+                          placeholder="User Name for GST Site" />
+                      </div>
+                      <div class="col-4 col-sm-4">
+                        <input class="multisteps-form__input form-control" type="text" placeholder="GST OTP#" />
+                      </div>
+                    </div>
+                    <div class="form-row mt-2">
+                      <div class="col-4 col-sm-4 mt-4 mt-sm-0">
+                        <input class="multisteps-form__input form-control" type="text" placeholder="CERSAI # " />
+                      </div>
+                      <div class="col-4 col-sm-4">
+                        <input class="multisteps-form__input form-control" type="text" placeholder="CIBIL Score" />
+                      </div>
+                      <div class="col-2 col-sm-2 mt-2 mt-sm-0" style="text-align: center;">
+                        <span>Incorporation Date</span>
+                      </div>
+                      <div class="col-2 col-sm-2 mt-2 mt-sm-0">
+                        <input class="multisteps-form__input form-control" type="date" placeholder="Incorporation Date"
+                          title="Incorporation Date" />
+                      </div>
+                    </div>
+                    <div class="form-row mt-2">
+                      <div class="col-4 col-sm-4">
+                        <input class="multisteps-form__input form-control" type="text" placeholder="Email ID" />
+                      </div>
+                      <div class="col-4 col-sm-4">
+                        <input class="multisteps-form__input form-control" type="text" placeholder="Mobile Number" />
+                      </div>
+                      <div class="col-4 col-sm-4 mt-4 mt-sm-0">
+                        <input class="multisteps-form__input form-control" type="text"
+                          placeholder="Office Number (Land Line)" />
+                      </div>
+
+                    </div>
+                    <div class="form-row mt-2">
+                      <div class="col-4 col-sm-4 mt-4 mt-sm-0">
+                        <input class="multisteps-form__input form-control" type="text"
+                          placeholder="Number of Directors" />
+                      </div>
+                      <div class="col-4 col-sm-4 mt-4 mt-sm-0">
+                        <input class="multisteps-form__input form-control" type="text" placeholder="Listing Status" />
+                      </div>
+                      <div class="col-4 col-sm-4">
+                        <input class="multisteps-form__input form-control" type="text"
+                          placeholder="Is Subsidiary Of Foreign Company (Y/N)" />
+                      </div>
+                    </div>
+                    <div class="form-row mt-2">
+                      <div class="col">
+                        <input class="multisteps-form__input form-control" type="text" placeholder="Address" />
+                      </div>
+                    </div>
+                    <div class="form-row mt-2">
+                      <div class="col-3 col-sm-3 mt-4 mt-sm-0">
+                        <input class="multisteps-form__input form-control" type="text" placeholder="Location" />
+                      </div>
+                      <div class="col-3 col-sm-3">
+                        <input class="multisteps-form__input form-control" type="text" placeholder="City" />
+                      </div>
+                      <div class="col-3 col-sm-3 mt-4 mt-sm-0">
+                        <select class="multisteps-form__select form-control">
+                          <option selected="selected">State...</option>
+                          <option>...</option>
+                        </select>
+                      </div>
+                      <div class="col-3 col-sm-3 mt-4 mt-sm-0">
+                        <input class="multisteps-form__input form-control" type="text" placeholder="PIN Code" />
+                      </div>
+                    </div>
+                    <div class="form-row mt-2">
+                      <div class="col-4 col-sm-4">
+                        <input class="multisteps-form__input form-control" type="text" placeholder="Last Agm Date" />
+                      </div>
+                      <div class="col-4 col-sm-4 mt-4 mt-sm-0">
+                        <input class="multisteps-form__input form-control" type="text"
+                          placeholder="Last Balance Sheet Date" />
+                      </div>
+                      <div class="col-4 col-sm-4">
+                        <input class="multisteps-form__input form-control" type="number"
+                          placeholder="# of Industry Experts on the Board" />
+                      </div>
+                    </div>
+                    <div class="form-row mt-2">
+                      <div class="col-4 col-sm-4 mt-4 mt-sm-0">
+                        <input class="multisteps-form__input form-control" type="number"
+                          placeholder="Number of Investors" />
+                      </div>
+                      <div class="col-4 col-sm-4 mt-4 mt-sm-0">
+                        <input class="multisteps-form__input form-control" type="text" placeholder="Investor Details" />
+                      </div>
+                      <div class="col-4 col-sm-4">
+                        <input class="multisteps-form__input form-control" type="text" placeholder="Auditor(s)" />
+                      </div>
+                    </div>
+                    <div class="form-row mt-2">
+
+                      <div class="col-4 col-sm-4 mt-4 mt-sm-0">
+                        <input class="multisteps-form__input form-control" type="text" placeholder="Parent Company" />
+                      </div>
+                      <div class="col-4 col-sm-4 mt-4 mt-sm-0">
+                        <input class="multisteps-form__input form-control" type="text" placeholder="No of Lenders" />
+                      </div>
+                      <div class="col-4 col-sm-4">
+                        <input class="multisteps-form__input form-control" type="text" placeholder="Lenders" />
+                      </div>
+                    </div>
+                    <div class="form-row mt-2">
+                      <div class="col-3 col-sm-3">
+                        <input class="multisteps-form__input form-control" type="text"
+                          placeholder="Total Open Charges" />
+                      </div>
+                      <div class="col-3 col-sm-3 mt-4 mt-sm-0">
+                        <input class="multisteps-form__input form-control" type="text"
+                          placeholder="Open Charges Amount (₹ mn)" />
+                      </div>
+                      <div class="col-3 col-sm-3">
+                        <input class="multisteps-form__input form-control" type="text"
+                          placeholder="Total Closed Charges" />
+                      </div>
+                      <div class="col-3 col-sm-3 mt-4 mt-sm-0">
+                        <input class="multisteps-form__input form-control" type="text"
+                          placeholder="Closed Charges Amount (₹ mn)" />
+                      </div>
+                    </div>
+                    <div class="form-row mt-2">
+                      <div class="col-6 col-sm-6">
+                        <input class="multisteps-form__input form-control" type="text"
+                          placeholder="Source of Financials" />
+                      </div>
+                      <div class="col-6 col-sm-6">
+                        <input class="multisteps-form__input form-control" type="text" placeholder="Filing Type" />
+                      </div>
+
+                    </div>
+                    <div class="form-row mt-2">
+                      <div class="col-4 col-sm-4">
+                        <input class="multisteps-form__input form-control" type="text" placeholder="# of Clients" />
+                      </div>
+                      <div class="col-4 col-sm-4 mt-4 mt-sm-0">
+                        <input class="multisteps-form__input form-control" type="text" placeholder="# of Suppliers" />
+                      </div>
+                      <div class="col-4 col-sm-4">
+                        <input class="multisteps-form__input form-control" type="text"
+                          placeholder="# of States in which sales operations are conducted" />
+                      </div>
+
+                    </div>
+                    <div class="form-row mt-2">
+                      <div class="col-6 col-sm-6">
+                        <input class="multisteps-form__input form-control" type="text"
+                          placeholder="Current Business Value" />
+                      </div>
+                      <div class="col-6 col-sm-6">
+                        <input class="multisteps-form__input form-control" type="text"
+                          placeholder="Expected Turn over" />
+                      </div>
+                    </div>
+                    <div class="button-row d-flex mt-4">
+                      <button class="btn btn-warning btn-dir" type="button" title="Save As Draft">Save As draft</button>
+                      <button class="btn btn-primary ml-auto js-btn-next" type="button" title="Next">Next</button>
+                    </div>
+                  </div>
+                </div>
+                <!--single form panel-->
+                <div class="multisteps-form__panel shadow p-4 rounded bg-white" data-animation="scaleIn">
+                  <h3 class="multisteps-form__title">Director Information</h3>
+                  <div class="multisteps-form__content">
+                    <div class="form-row mt-2">
+                      <div class="col-3 col-sm-3">
+                        <input class="multisteps-form__input form-control" type="text" placeholder="Name of Director" />
+                      </div>
+                      <div class="col-3 col-sm-3 mt-4 mt-sm-0">
+                        <select class="multisteps-form__select form-control">
+                          <option selected="selected">Gender</option>
+                          <option>Male</option>
+                          <option>Female</option>
+                          <option>Other</option>
+                        </select>
+                      </div>
+                      <div class="col-1 col-sm-1 mt-1 mt-sm-0" style="text-align: center;">
+                        <span>DOB</span>
+                      </div>
+                      <div class="col-2 col-sm-2 mt-2 mt-sm-0">
+                        <input class="multisteps-form__input form-control" type="date" placeholder="Date Of Birth" />
+                      </div>
+                      <div class="col-3 col-sm-3 mt-4 mt-sm-0">
+                        <select class="multisteps-form__select form-control">
+                          <option selected="selected">Marital Status</option>
+                          <option>Single</option>
+                          <option>Married</option>
+                          <option>Divorced</option>
+                        </select>
+                      </div>
+                    </div>
+                    <div class="form-row mt-2">
+                      <div class="col-9 col-sm-9">
+                        <input class="multisteps-form__input form-control" type="text" placeholder="Address" />
+                      </div>
+                      <div class="col-3 col-sm-3 mt-4 mt-sm-0">
+                        <input class="multisteps-form__input form-control" type="text" placeholder="PINCODE" />
+                      </div>
+                    </div>
+                    <div class="form-row mt-2">
+                      <div class="col-3 col-sm-3">
+                        <input class="multisteps-form__input form-control" type="text" placeholder="Voter ID" />
+                      </div>
+                      <div class="col-3 col-sm-3 mt-4 mt-sm-0">
+                        <input class="multisteps-form__input form-control" type="text" placeholder="PAN" />
+                      </div>
+                      <div class="col-3 col-sm-3">
+                        <input class="multisteps-form__input form-control" type="text" placeholder="Aadhar" />
+                      </div>
+                      <div class="col-3 col-sm-3">
+                        <input class="multisteps-form__input form-control" type="text" placeholder="Passport Number" />
+                      </div>
+                    </div>
+                    <div class="form-row mt-2">
+                      <div class="col-3 col-sm-3 mt-4 mt-sm-0">
+                        <input class="multisteps-form__input form-control" type="text" placeholder="DIN" />
+                      </div>
+                      <div class="col-3 col-sm-3 mt-4 mt-sm-0">
+                        <input class="multisteps-form__input form-control" type="text" placeholder="CIBIL Score" />
+                      </div>
+                      <div class="col-3 col-sm-3">
+                        <input class="multisteps-form__input form-control" type="text" placeholder="Mobile Number" />
+                      </div>
+                      <div class="col-3 col-sm-3 mt-4 mt-sm-0">
+                        <input class="multisteps-form__input form-control" type="text" placeholder="Email ID" />
+                      </div>
+                    </div>
+                    <div class="form-row mt-2">
+                      <div class="col-3 col-sm-3">
+                        <label>Aadhaar Card</label>
+                      </div>
+
+                      <div class="col-3 col-sm-3 mt-4 mt-sm-0">
+                        <input class="multisteps-form__input form-control" type="file" placeholder="Aadhar" />
+                      </div>
+                      <div class="col-3 col-sm-3">
+                        <label>Passport</label>
+                      </div>
+                      <div class="col-3 col-sm-3 mt-4 mt-sm-0">
+                        <input class="multisteps-form__input form-control" type="file" placeholder="Passport" />
+                      </div>
+                    </div>
+                    <div class="form-row mt-2">
+                      <div class="col-3 col-sm-3">
+                        <label>Voters ID </label>
+                      </div>
+                      <div class="col-3 col-sm-3 mt-4 mt-sm-0">
+                        <input class="multisteps-form__input form-control" type="file" placeholder="Voter" />
+                      </div>
+
+                      <div class="col-3 col-sm-3">
+                        <label>PAN</label>
+                      </div>
+                      <div class="col-3 col-sm-3 mt-4 mt-sm-0">
+                        <input class="multisteps-form__input form-control" type="file" placeholder="PAN" value="PAN" />
+                      </div>
+                    </div>
+                    <div class="col">
+                      <div class="form-row mt-2">
+                        <div class="col-3 col-sm-3"></div>
+                        <div class="col-3 col-sm-3">
+                          <h6><b>Tax Statement</b></h6>
+                        </div>
+                        <div class="col-3 col-sm-3"> </div>
+                        <div class="col-3 col-sm-3">
+                          <h6><b>Bank Statement</b></h6>
+                        </div>
+                      </div>
+
+                      <div class="form-row mt-2">
+                        <div class="col-3 col-sm-3">
+                          FY 2019-2020
+                        </div>
+                        <div class="col-3 col-sm-3">
+                          <input class="multisteps-form__input form-control" type="file" placeholder="FY1" />
+                        </div>
+                        <div class="col-3 col-sm-3"></div>
+                        <div class="col-3 col-sm-3">
+                          <input class="multisteps-form__input form-control" type="file" placeholder="FY1" />
+                        </div>
+                      </div>
+                      <div class="form-row mt-2">
+                        <div class="col-3 col-sm-3">
+                          FY 2018-2019
+                        </div>
+                        <div class="col-3 col-sm-3">
+                          <input class="multisteps-form__input form-control" type="file" placeholder="FY1" />
+                        </div>
+                        <div class="col-3 col-sm-3"></div>
+                        <div class="col-3 col-sm-3">
+                          <input class="multisteps-form__input form-control" type="file" placeholder="FY1" />
+                        </div>
+                      </div>
+                      <div class="form-row mt-2">
+                        <div class="col-3 col-sm-3">
+                          FY 2017-2018
+                        </div>
+                        <div class="col-3 col-sm-3">
+                          <input class="multisteps-form__input form-control" type="file" placeholder="FY1" />
+                        </div>
+                        <div class="col-3 col-sm-3"></div>
+                        <div class="col-3 col-sm-3">
+                          <input class="multisteps-form__input form-control" type="file" placeholder="FY1" />
+                        </div>
+                      </div>
+
+                    </div>
+                    <div class="form-row mt-2">
+                      <div class="col-6 col-sm-3 mt-4 mt-sm-0">
+                        <input class="multisteps-form__input form-control btn-primary" type="button"
+                          placeholder="Add Director" value="Add Director" />
+                      </div>
+                      <div class="col-6 col-sm-3 mt-4 mt-sm-0">
+                        <input class="multisteps-form__input form-control btn-primary" type="button" placeholder="Clear"
+                          value="Clear" />
+                      </div>
+                    </div>
+
+                    <div class="form-row mt-2">
+                      <div class="col">
+                        <table class="table table-bordered">
+                          <tr style="text-align: center;background-color: teal;">
+                            <th>#</th>
+                            <th style="min-width:200px ;">Director's Name</th>
+                            <th>Document List</th>
+                            <th>Action</th>
+                          </tr>
+                          <tr>
+                            <td>1</td>
+                            <td>Name of Director</td>
+                            <td>Document List Display with Comma Separated</td>
+                            <td style="min-width:200px ; text-align: center;">
+                              <a href="#" title="View">
+                                <i class="fas fa-file-alt btn-icon"></i> 
+                              </a>
+                              <a href="#" title="Edit">
+                                <i class="fas fa-edit btn-icon"></i> 
+                              </a>
+                              <a href="#" title="Delete">
+                                <i class="fas fa-trash-alt btn-icon"></i> 
+                              </a>
+                            </td>
+                          </tr>
+
+                        </table>
+                      </div>
+                    </div>
+                  </div>
+                  <h3 class="multisteps-form__title">Organization Information</h3>
+                  <div class="multisteps-form__content">
+
+                    <div class="form-row mt-2">
+                      <div class="col-3 col-sm-3">
+                        <label>Partnership Deed</label>
+                      </div>
+                      <div class="col-3 col-sm-3">
+                        <input class="multisteps-form__input form-control" type="file" placeholder="Email ID" />
+                      </div>
+                      <div class="col-3 col-sm-3">
+                        <label>MoA</label>
+                      </div>
+                      <div class="col-3 col-sm-3">
+                        <input class="multisteps-form__input form-control" type="file" placeholder="Email ID" />
+                      </div>
+                    </div>
+                    <div class="form-row mt-2">
+                      <div class="col-3 col-sm-3">
+                        <label>PAN</label>
+                      </div>
+                      <div class="col-3 col-sm-3">
+                        <input class="multisteps-form__input form-control" type="file" placeholder="Email ID" />
+                      </div>
+                      <div class="col-3 col-sm-3">
+                        <label>AGM Note (Current FY)</label>
+                      </div>
+                      <div class="col-3 col-sm-3">
+                        <input class="multisteps-form__input form-control" type="file" placeholder="Email ID" />
+                      </div>
+                    </div>
+
+                    <div class="form-row mt-2">
+                      <div class="col-3 col-sm-3">
+                        <label><span>Others</span></label>
+                      </div>
+                      <div class="col-3 col-sm-3">
+                        <input class="multisteps-form__input form-control" type="text" placeholder="Document Description" />
+                      </div>
+                      <div class="col-3 col-sm-3">
+                        <input class="multisteps-form__input form-control" type="file" placeholder="Email ID" />
+                      </div>
+                      <div class="col-3 col-sm-3">
+                        <button class="multisteps-form__input form-control btn btn-primary btn-dir"  > Add Another</button>
+                      </div>
+                    </div>
+
+                    <div class="col">
+                      <div class="form-row mt-2">
+                        <div class="col-3 col-sm-3"></div>
+                        <div class="col-3 col-sm-3">
+                          <h6><b>Balance Sheet</b></h6>
+                        </div>
+                        <div class="col-3 col-sm-3"> </div>
+                        <div class="col-3 col-sm-3">
+                          <h6><b>P&L Statement</b></h6>
+                        </div>
+                      </div>
+
+                      <div class="form-row mt-2">
+                        <div class="col-3 col-sm-3">
+                          FY 2019-2020
+                        </div>
+                        <div class="col-3 col-sm-3">
+                          <input class="multisteps-form__input form-control" type="file" placeholder="FY1" />
+                        </div>
+                        <div class="col-3 col-sm-3"></div>
+                        <div class="col-3 col-sm-3">
+                          <input class="multisteps-form__input form-control" type="file" placeholder="FY1" />
+                        </div>
+                      </div>
+                      <div class="form-row mt-2">
+                        <div class="col-3 col-sm-3">
+                          FY 2018-2019
+                        </div>
+                        <div class="col-3 col-sm-3">
+                          <input class="multisteps-form__input form-control" type="file" placeholder="FY1" />
+                        </div>
+                        <div class="col-3 col-sm-3"></div>
+                        <div class="col-3 col-sm-3">
+                          <input class="multisteps-form__input form-control" type="file" placeholder="FY1" />
+                        </div>
+                      </div>
+                      <div class="form-row mt-2">
+                        <div class="col-3 col-sm-3">
+                          FY 2017-2018
+                        </div>
+                        <div class="col-3 col-sm-3">
+                          <input class="multisteps-form__input form-control" type="file" placeholder="FY1" />
+                        </div>
+                        <div class="col-3 col-sm-3"></div>
+                        <div class="col-3 col-sm-3">
+                          <input class="multisteps-form__input form-control" type="file" placeholder="FY1" />
+                        </div>
+                      </div>
+                    </div>
+
+                    <div class="form-row mt-2">
+                      <div class="col-6 col-sm-3 mt-4 mt-sm-0">
+                        <input class="multisteps-form__input form-control btn-primary" type="button"
+                          placeholder="Add Director" value="Add Document" />
+                      </div>
+                      <div class="col-6 col-sm-3 mt-4 mt-sm-0">
+                        <input class="multisteps-form__input form-control btn-primary" type="button" placeholder="Clear"
+                          value="Clear" />
+                      </div>
+                    </div>
+
+                    <div class="form-row mt-2">
+                      <div class="col">
+                        <table class="table table-bordered">
+                          <tr style="text-align: center;background-color: teal;">
+                            <th>#</th>
+                            <th>Year</th>
+                            <th style="min-width:200px ;">Document type</th>
+                            <th>Document</th>
+                            <th>Action</th>
+                          </tr>
+                          <tr>
+                            <td>1</td>
+                            <td>2019</td>
+                            <td>P&L Statement</td>
+                            <td><a href="#">Document Name.pdf</a></td>
+                            <td style="text-align: center;">
+                              <a class="btn-dir">
+                                <i class="fas fa-trash-alt"></i>
+                              </a>
+                            </td>
+                          </tr>
+
+                        </table>
+                      </div>
+                    </div>
+
+                  </div>
+                  <div class="button-row d-flex mt-4">
+                    <button class="btn btn-primary js-btn-prev" type="button" title="Prev">Prev</button>
+                    <button class="btn btn-warning btn-dir" type="button" title="Save As Draft">Save As draft</button>
+                    <button class="btn btn-primary ml-auto js-btn-next" type="button" title="Next">Next</button>
+
+                  </div>
+                </div>
+                <div class="multisteps-form__panel shadow p-4 rounded bg-white" data-animation="scaleIn">
+                  <h3 class="multisteps-form__title">Final Confirmation</h3>
+                  <div class="multisteps-form__content">
+
+                    <div class="form-row mt-2">
+                      <textarea class="multisteps-form__textarea form-control"
+                        placeholder="Additional Comments and Requirements"></textarea>
+                    </div>
+                    <div class="button-row d-flex mt-4">
+                      <button class="btn btn-primary js-btn-prev" type="button" title="Prev">Prev</button>
+                      <button class="btn btn-warning btn-dir" type="button" title="Save As draft">Save As draft</button>
+                      <button class="btn btn-success ml-auto" type="button" title="Send">Submit Form</button>
+                    </div>
+                  </div>
+                </div>
+              </form>
+            </div>
+          </div>
+        </div>
+      </div>
+      <!-- </div> -->
+    </div>
+    <!-- partial -->
+
+    <!-- Main Footer -->
+    <footer class="main-footer brand_green_bg brand_white_txt">
+      <div class="float-right d-none d-sm-block ">
+        <b>Version</b> 1.0.0
+      </div>
+      <strong>&copy; Copyright <a class="brand_golden_txt" href="http://gabhasti.com/">gabhasti.com</a> 2020 </strong>
+      All rights
+      reserved.
+    </footer>
+  </div>
+  <!--Wrapper-->
+  <script src='https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/4.1.3/css/bootstrap.min.css'></script>
+  <script src="../dist/js/multi.form.script.js"></script>
+
+</body>
+
+</html>
