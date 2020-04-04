@@ -11,20 +11,20 @@
   <meta name="viewport" content="width=device-width, initial-scale=1">
 
   <!-- Font Awesome -->
-  <link rel="stylesheet" href="<%=request.getContextPath() %>/plugins/fontawesome-free/css/all.min.css">
+  <link rel="stylesheet" href="${pageContext.request.contextPath}/plugins/fontawesome-free/css/all.min.css">
   <!-- Ionicons -->
   <link rel="stylesheet" href="https://code.ionicframework.com/ionicons/2.0.1/css/ionicons.min.css">
   <!-- icheck bootstrap -->
-  <link rel="stylesheet" href="<%=request.getContextPath() %>/plugins/icheck-bootstrap/icheck-bootstrap.min.css">
+  <link rel="stylesheet" href="${pageContext.request.contextPath}/plugins/icheck-bootstrap/icheck-bootstrap.min.css">
   <!-- Theme style -->
-  <link rel="stylesheet" href="<%=request.getContextPath() %>/dist/css/adminlte.min.css">
+  <link rel="stylesheet" href="${pageContext.request.contextPath}/dist/css/adminlte.min.css">
   <!-- Google Font: Source Sans Pro -->
   <link href="https://fonts.googleapis.com/css?family=Source+Sans+Pro:300,400,400i,700" rel="stylesheet">
 
-  <link rel="stylesheet" href="<%=request.getContextPath() %>/dist/css/custom_brand.css">
+  <link rel="stylesheet" href="${pageContext.request.contextPath}/dist/css/custom_brand.css">
   <style>
     .bg-img {
-      background-image: url(/dist/img/intro-currency.jpg);
+      background-image: url(/app/dist/img/intro-currency.jpg);
       height: 100%;
       background-position: center;
       background-repeat: no-repeat;
@@ -40,7 +40,7 @@
     <nav class="main-header navbar navbar-expand-md navbar-light brand_green_bg">
       <div class="container-fluid">
         <a href="/index3.html" class="navbar-brand">
-          <img src="/dist/img/AdminLTELogo.png" alt="AdminLTE Logo" class="brand-image img-circle elevation-3"
+          <img src="${pageContext.request.contextPath}/dist/img/AdminLTELogo.png" alt="AdminLTE Logo" class="brand-image img-circle elevation-3"
             style="opacity: .8">
           <span class="brand-text font-weight-light brand_white_txt"><b>Customer Engagement Portal</b></span>
         </a>
@@ -101,9 +101,9 @@
             <div class="card-body login-card-body">
               <p class="login-box-msg"><i class="fas fa-user brand_golden_txt"></i> Sign in to start your session</p>
               
-              <form action="<%=request.getContextPath() %>/dashboard" method="post">
+              <form action="${pageContext.request.contextPath}/login" method="post">
                 <div class="input-group mb-3">
-                  <input type="text" class="form-control" name="user_name">
+                  <input type="text" class="form-control" name="username">
                   <div class="input-group-append">
                     <div class="input-group-text">
                       <span class="fas fa-envelope"></span>
@@ -169,11 +169,11 @@
   <!-- REQUIRED SCRIPTS -->
 
   <!-- jQuery -->
-  <script src="/plugins/jquery/jquery.min.js"></script>
+  <script src="${pageContext.request.contextPath}/plugins/jquery/jquery.min.js"></script>
   <!-- Bootstrap 4 -->
-  <script src="/plugins/bootstrap/js/bootstrap.bundle.min.js"></script>
+  <script src="${pageContext.request.contextPath}/plugins/bootstrap/js/bootstrap.bundle.min.js"></script>
   <!-- AdminLTE App -->
-  <script src="/dist/js/adminlte.min.js"></script>
+  <script src="${pageContext.request.contextPath}/dist/js/adminlte.min.js"></script>
 
 </body>
 
